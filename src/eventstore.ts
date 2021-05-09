@@ -21,6 +21,7 @@ export class EventStore {
       options: {
         ssl: ssl,
       },
+      positionsCollectionName: 'positions'
     });
     this.eventstore.init(err => {
       if (err) {
